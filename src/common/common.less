@@ -1,0 +1,136 @@
+/*样式重置*/
+@colorWhite: #FFFFFF;
+@colorSix: #666666;
+@colorTwo: #222222;
+@colorThree: #333333;
+@colorNine: #999999;
+@colorD: #DDDDDD;
+@colorBlue: #03A9F4;
+@colorBorder: #D2D2D2;
+@colorOrange: #EF6C00;
+@colorGreen: #558B2F;
+@colorRed: #C41411;
+@colorYellow: #FFC107;
+
+.clear {
+  zoom: 1;
+  overflow: hidden;
+}
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.flexBox{
+  display: -webkit-box;
+  display: flex;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.flexBox.start {
+  align-items: flex-start;
+}
+.flexBox.end {
+  align-items: flex-end;
+}
+.flexBox.stretch {
+  align-items: stretch;
+}
+.flex-1 {
+  -webkit-flex: 1; /* Chrome */
+  -ms-flex: 1; /* IE 10 */
+  flex: 1; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-box-flex: 1; /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: 1;
+}
+.line-after, .line-before {
+  position: relative;
+  &:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid #EBEBEB;
+    color: #EBEBEB;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+  }
+}
+.line-after {
+  &:after {
+    bottom: 0;
+  }
+}
+.line-before {
+  &:after {
+    top: 0;
+  }
+}
+.line-left {
+  &:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    bottom: 0;
+    border-left: 1px solid #f1f1f1;
+    color: #f1f1f1;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleX(.5);
+    transform: scaleX(.5);
+  }
+}
+/deep/ input::-webkit-input-placeholder {
+  color: #DDDDDD;
+  font-size: 12px;
+}
+/deep/ input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #DDDDDD;
+  font-size: 12px;
+}
+/deep/ input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #DDDDDD;
+  font-size: 12px;
+}
+/deep/ input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #DDDDDD;
+  font-size: 12px;
+}
+/deep/ textarea::-webkit-input-placeholder {
+  color: #DDDDDD;
+  font-size: 12px;
+}
+/deep/ textarea::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #DDDDDD;
+  font-size: 12px;
+}
+/deep/ textarea:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #DDDDDD;
+  font-size: 12px;
+}
+/deep/ textarea:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #DDDDDD;
+  font-size: 12px;
+}
+
